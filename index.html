@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./src/index.css" />
+  </head>
+  <body>
+    <div>
+      <div>
+        <canvas></canvas>
+      </div>
+      <div>
+        <span class="setToWhite">Select the pattern:</span>
+        <span>
+          <select id="select-lexicon" onchange="onLexiconChange()">
+          </select>
+        </span>
+        <span><button onclick="onStart()">Start</button></span>
+        <span><button onclick="onStop()">Stop</button></span>
+        <div id="pattern-description" class="setToWhite" ></div>
+      </div>
+    </div>
+  </body>
+  <script src="./src/module.js"></script>
+  <script src="./src/engine.js"></script>
+  <script src="./src/loadFile.js"></script>
+</html>
